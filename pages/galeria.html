@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+</head>
+<body>
+    <h1>Galería de Imágenes</h1>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="image1.jpg" alt="Imagen 1">
+            <p>Descripción de la imagen 1</p>
+        </div>
+        <div class="gallery-item">
+            <img src="image2.jpg" alt="Imagen 2">
+            <p>Descripción de la imagen 2</p>
+        </div>
+        <div class="gallery-item">
+            <img src="image3.jpg" alt="Imagen 3">
+            <p>Descripción de la imagen 3</p>
+        </div>
+        <!-- Agrega más elementos de galería según sea necesario -->
+    </div>
+
+    <style>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery-item {
+            flex: 1 1 calc(33.333% - 10px);
+            box-sizing: border-box;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+        }
+        .gallery-item p {
+            text-align: center;
+        }
+    </style>
+</body>
+</html>
